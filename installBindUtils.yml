@@ -1,0 +1,9 @@
+---
+- name: Install bind-utils package in linux
+  hosts: Webservers
+  become: true
+  task:
+    - name: Install in Centos OS.
+      yum: 
+       - name: bind-utils
+      when: ansible_os_family=="RedHat"
