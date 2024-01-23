@@ -2,7 +2,7 @@
 - name: Install bind-utils package in linux
   hosts: Webservers
   become: true
-  task:
+  tasks:
     - name: Install in Centos OS.
       yum: 
        - name: bind-utils
