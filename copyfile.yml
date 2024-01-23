@@ -1,0 +1,10 @@
+---
+- name: Copy of file
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Copy file
+      copy:
+        src: /home/dbserver/copyfile/archivo1.txt
+        dest: /usr/src/

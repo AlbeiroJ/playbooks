@@ -1,0 +1,8 @@
+---
+- name: Copy of file
+  hosts: all
+  gather_facts: false
+  become: true
+  roles:
+    - copyfile
+

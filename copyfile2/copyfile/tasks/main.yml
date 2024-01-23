@@ -1,0 +1,13 @@
+---
+# tasks file for copyfile
+- name: Copy File
+  copy:
+    src: archivo1.txt
+    dest: /usr/src/
+- name: Generar archivos de Discos
+  shell: df -hT > /usr/src/discos.txt
+- name: Traer archivos con información de discos
+  fetch: 
+     src: /usr/src/discos.txt
+     dest: /tmp/
+     flat: yes
