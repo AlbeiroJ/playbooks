@@ -5,5 +5,5 @@
   tasks:
     - name: Install in Centos OS.
       yum: 
-       - name: bind-utils
+       name: bind-utils
       when: ansible_os_family=="RedHat"
