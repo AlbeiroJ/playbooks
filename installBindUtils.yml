@@ -1,6 +1,6 @@
 ---
 - name: Install bind-utils package in linux
-  hosts: Webservers
+  hosts: all
   become: true
   tasks:
     - name: Install in Centos OS.
