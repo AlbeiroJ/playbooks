@@ -6,5 +6,5 @@
   tasks:
     - name: Copy file
       copy:
-        src: /home/dbserver/copyfile/archivo1.txt
+        src: /root/archivo.txt
         dest: /usr/src/
